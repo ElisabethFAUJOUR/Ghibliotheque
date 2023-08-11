@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Eyad" ;
+    src: url("/fonts/Eyad-Al-Samman-Ghibli-Bold.woff");
+}
+
+@font-face {
+    font-family: "Eyad" ;
+    src: url("/fonts/Eyad-Al-Samman-Ghibli.woff");
+}
+
+:root {
+    --white:white;
+    --white-orange:#FCEEE7;
+    --light-orange:#eeab8a;
+    --black:black;
+    --whitesmoke:#f9f9f9;
+    --grey:#929191;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--whitesmoke);
+}
+
+.header {
+    height: auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-orange);
+}
+
+.header_link {
+    text-align: center;
+}
+
+.header__img {
+    width:15%;
+    padding:1rem;
+}
+
+.footer {
+    height: auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-orange);
+    height:8vh;
+}
+
+.footer_content {
+    text-align: center;
+    font-size: 0.9rem;
+}

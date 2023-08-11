@@ -1,0 +1,110 @@
+:root {
+  --white:white;
+  --white-orange:#FCEEE7;
+  --light-orange:#eeab8a;
+  --black:black;
+  --whitesmoke:#f9f9f9;
+  --grey:#929191;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    background-color: var(--whitesmoke);
+    margin: 0 18rem;
+}
+
+/***** SEARCH BAR *****/
+
+.form__search {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 1rem;
+    width:100%;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+
+.search__input::placeholder {
+  color:var(--grey);
+}
+
+.fa-solid {
+  color:var(--grey);
+}
+
+.search__button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/**** LIST MOVIES ****/ 
+
+.movies__container {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2.5rem;
+    padding:2.5rem 0;
+}
+
+/**** CARD MOVIE ****/ 
+
+.movie__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--whitesmoke);
+  padding-bottom:2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width:25%;
+}
+
+.movie__img {
+  width:100%;
+}
+
+.movie__title {
+  color:var(--black);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding:0.4rem 0;
+}
+
+.movie__text {
+  display: flex;
+  flex-direction: row;
+  color : var(--grey);
+
+}
+
+.movie__date {
+  border-right: 1px solid var(--grey);
+  padding-right: 1rem;
+}
+
+.movie__duration {
+  padding-left: 1rem;
+}

@@ -1,0 +1,72 @@
+:root {
+  --white:white;
+  --white-orange:#FCEEE7;
+  --light-orange:#eeab8a;
+  --black:black;
+  --whitesmoke:#f9f9f9;
+  --grey:#929191;
+}
+
+.main {
+  background-color: var(--whitesmoke);
+  margin: 0 24rem;
+}
+
+.button-back {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--grey);
+  padding: 0.8rem 1.5rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  border:none;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.button-back:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); 
+}
+
+/**** CONTENT MOVIE ****/
+
+.movie__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+
+.movie__banner {
+  width:40%;
+}
+
+.movie__banner img {
+  width:100%
+}
+
+.movie__details {
+  width:60%;
+  margin: 3rem;
+}
+
+.movie__title {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.movie__subtitle {
+  padding-bottom: 1.5rem;;
+}
+
+.movie__subtitle h2 {
+  color:var(--grey);
+  padding-bottom: 0.5rem;
+}
