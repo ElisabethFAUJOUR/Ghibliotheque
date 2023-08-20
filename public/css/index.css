@@ -9,13 +9,13 @@
     height: 100vh;
 }
 
-.home-img {
+.home__img {
     max-width: 500px;
     width:80%;
     margin: 3rem 0;
 }
 
-.home-button {
+.home__button {
     margin-top: 6rem;
     padding: 1rem 1.5rem;
     background-color:var(--color-white-orange) ;
@@ -27,7 +27,7 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.home-button:hover {
+.home__button:hover {
     box-shadow: 0 10px 16px var(--color-box-shadow);
     transform: scale(1.05);
 }
