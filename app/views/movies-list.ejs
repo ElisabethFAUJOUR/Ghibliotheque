@@ -1,35 +1,33 @@
 <%- include('partials/header') %>
 
-    <main class="main">
-        <div class="movies-list__container">
-            <form class="form__search-bar">
-                <input class="search-bar__input" type="text" placeholder="Recherche...">
-                <i class="bi bi-search"></i>
-            </form>
-    
-            <div class="movies__container">    
-                <% movies.forEach(movie => { %>
-                    <article class="movie__element">
-                        <a href="/movies/<%= movie.id %>">
-                            <img class="movie__img" src="<%= movie.banner_src %>" alt="<%= movie.title %>">
-                        </a>
-                        <a href="/movies/<%= movie.id %>">
-                            <h1 class="movie__title"><%= movie.title %></h1>
-                        </a>   
-                            <div class="movie__text">
-                                <p class="movie__date"><%= movie.release_date %></p>
-                                <p class="movie__duration"><%= movie.duration %> min</p>
-                            </div>
-                    </article >
-                <% }) %>   
-            </div>
-        </div>
-    </main>
+<main class="main">
+    <form class="form__search-bar">
+        <input class="search-bar__input" type="text" placeholder="Recherche...">
+        <i class="bi bi-search"></i>
+    </form>
+
+    <div class="movies__container">    
+        <% movies.forEach(movie => { %>
+            <article class="movie__element">
+                <a href="/movies/<%= movie.id %>">
+                    <img class="movie__img" src="<%= movie.banner_src %>" alt="<%= movie.title %>">
+                </a>
+                <a href="/movies/<%= movie.id %>">
+                    <h1 class="movie__title"><%= movie.title %></h1>
+                </a>   
+                    <div class="movie__text">
+                        <p class="movie__date"><%= movie.release_date %></p>
+                        <p class="movie__duration"><%= movie.duration %> min</p>
+                    </div>
+            </article >
+        <% }) %>   
     </div>
+</main>
 
-    <%- include('partials/footer') %>
-    <script src="/js/app.js"></script>
+<%- include('partials/footer') %>
+</div>
 
-    </body>
+<script src="/js/app.js"></script>
+</body>
 
-    </html>
+</html>

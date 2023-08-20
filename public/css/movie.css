@@ -1,30 +1,22 @@
-.movie__card {
-  background-color: var(--color-whitesmoke);
-  margin: 0 24rem;
-}
-
-.button-back {
-  display: inline-block;
-  background-color: var(--color-white);
-  color: var(--color-grey);
+.movie__button {
+  margin-bottom: 2rem;
   padding: 0.8rem 1.5rem;
-  margin: 2rem 0;
-  text-decoration: none;
-  border:none;
-  font-size: 0.9rem;
+  background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--color-box-shadow); 
+  color: var(--color-grey);
+  font-size: 0.9rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.button-back:hover {
+.movie__button:hover {
   box-shadow: 0 10px 16px var(--color-box-shadow); 
   transform: scale(1.05); 
 }
 
 /**** CONTENT MOVIE ****/
 
-.movie {
+.movie__card {
   display: flex;
   flex-direction: row;
   justify-content: center;
