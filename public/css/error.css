@@ -38,7 +38,7 @@
 
 @media (max-width: 1299px) {
 
-    .container {
+    .error__container {
         flex-direction: column-reverse;
         justify-content:center;
         align-items:center;

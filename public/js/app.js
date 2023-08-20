@@ -5,7 +5,7 @@ const app = {
 
     searchMovies() {
         const searchInput = document.querySelector('.search-bar__input');
-        const moviesElements = document.querySelectorAll('.movie__element');
+        const moviesElements = document.querySelectorAll('.movie__article');
         let noResultsMessage = document.querySelector('.no-results-message');
 
         searchInput.addEventListener('input', () => {

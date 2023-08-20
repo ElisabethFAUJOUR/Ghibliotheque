@@ -1,34 +1,40 @@
 <%- include('partials/header') %>
 
 <main class="main">
-<a class ="movie__button" href="/movies">RETOUR A LA LISTE DE FILMS</a>
-<div class="movie__card">
-    <div class="movie__banner">
-        <img src="<%= movie.image_src %>" alt="<%= movie.title %>">
-    </div>
-    <div class="movie__details">
-      <div class="movie__title">
-        <h3><%= movie.title %></h3>
-        <h3><%= movie.original_title %></h3>
+  <div class="movie__button">
+    <a href="/movies">RETOUR A LA LISTE DE FILMS</a>
+  </div>
+  
+  <div class="movie__card">
+      <img class="card__banner" src="<%= movie.image_src %>" alt="<%= movie.title %>">
+      <div class="card__details">
+        <div class="card__title">
+          <h3><%= movie.title %></h3>
+          <h3><%= movie.original_title %></h3>
+        </div>
+        <div class="card__synopsis-container">
+          <div class="card__subtitle">
+            <h2>SYNOPSIS</h2>
+            <p><%= movie.description %></p>
+          </div>
+        </div>
+        <div class="card__data-container">
+          <div class="card__subtitle">
+            <h2>DIRECTOR</h2>
+            <p> <%= movie.director %></p>
+          </div>
+          <div class="card__subtitle">
+            <h2>RELEASE DATE</h2>
+            <p><%= movie.release_date %></p>
+          </div>
+          <div class="card__subtitle">
+            <h2>DURATION</h2>
+            <p><%= movie.duration %> minutes</p>
+          </div>
+        </div>
       </div>
-      <div class="movie__subtitle">
-        <h2>SYNOPSIS</h2>
-        <p><%= movie.description %></p>
-      </div>
-      <div class="movie__subtitle">
-        <h2>DIRECTOR</h2>
-        <p> <%= movie.director %></p>
-    </div>
-      <div class="movie__subtitle">
-        <h2>RELEASE DATE</h2>
-        <p><%= movie.release_date %></p>
-      </div>
-      <div class="movie__subtitle">
-        <h2>DURATION</h2>
-        <p><%= movie.duration %> minutes</p>
-      </div>
-    </div>
-</div>
+  </div>
+
 </main>
 
 <%- include('partials/footer') %>
