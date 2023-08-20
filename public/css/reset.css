@@ -55,6 +55,11 @@ a {
 
 label, button {
   cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 html {
@@ -67,4 +72,6 @@ html {
 
 input, button {
   outline: 0;
+  border: none;
+  outline: none;
 }

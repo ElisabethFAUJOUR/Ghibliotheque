@@ -1,32 +1,41 @@
 <%- include('partials/header') %>
 
     <main class="main">
-
-        <form class="form__search" action="/search" method="GET">
-            <input class="search__input" type="text" placeholder="Recherche..." name="title" id="film">
-            <label for="order">Trier par ordre alphabétique</label>
-            <input type="checkbox" name="order" id="order" value="asc">
-            <button class="search__button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-        <div class="movies__container">
-            <% movies.forEach(movie=> { %>
-                <article class="movie__element">
-                    <a href="/films/<%= movie.id %>">
-                        <img class="movie__img" src="<%= movie.banner_src %>" alt="<%= movie.title %>">
-                    </a>
-                    <a href="/films/<%= movie.id %>">
-                        <h1 class="movie__title"><%= movie.title %></h1>
-                    </a>   
-                        <div class="movie__text">
-                            <p class="movie__date"><%= movie.release_date %></p>
-                            <p class="movie__duration"><%= movie.duration %> min</p>
-                        </div>
-                  
-                </article >
-                <% }) %>
+        <div class="movies-list__container">
+            <form class="movies-list__form" action="/search" method="GET">
+                <div class="form__search-bar">
+                    <div class="search-bar__input" >
+                        <input type="text" placeholder="Recherche..." name="title" id="film">
+                    </div>
+                    <div class="search-bar__sort-button">
+                        <input type="checkbox" name="order" id="order" value="asc">
+                        <label for="order">Trier par ordre alphabétique</label>
+                        <button class="search-bar__button" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="form__reset">
+                    <button class="reset__button" type="submit">Clear</button>
+                </div>
+            </form>
+    
+            <div class="movies__container">
+                <% movies.forEach(movie=> { %>
+                    <article class="movie__element">
+                        <a href="/films/<%= movie.id %>">
+                            <img class="movie__img" src="<%= movie.banner_src %>" alt="<%= movie.title %>">
+                        </a>
+                        <a href="/films/<%= movie.id %>">
+                            <h1 class="movie__title"><%= movie.title %></h1>
+                        </a>   
+                            <div class="movie__text">
+                                <p class="movie__date"><%= movie.release_date %></p>
+                                <p class="movie__duration"><%= movie.duration %> min</p>
+                            </div>
+                      
+                    </article >
+                    <% }) %>
+            </div>
         </div>
-
     </main>
     </div>
     </body>

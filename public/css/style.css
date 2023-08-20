@@ -67,6 +67,14 @@ body {
   padding: 1rem;
 }
 
+.main {
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   flex-direction: row;

@@ -1,4 +1,4 @@
-.main {
+.movie__card {
   background-color: var(--color-whitesmoke);
   margin: 0 24rem;
 }
@@ -24,7 +24,7 @@
 
 /**** CONTENT MOVIE ****/
 
-.movie__container {
+.movie {
   display: flex;
   flex-direction: row;
   justify-content: center;
