@@ -1,7 +1,7 @@
 .movies-list__container {
   margin: 4rem auto;
   max-width: 1400px;
-  width:90%;
+  width: 90%;
 }
 
 /***** SEARCH BAR *****/
@@ -11,72 +11,81 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width:100%;
+  width: 100%;
   margin-bottom: 2rem;
   padding: 0.6rem 1rem;
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--color-box-shadow);
-  color:var(--color-grey);
+  color: var(--color-grey);
 }
 
 .search-bar__input::placeholder {
   font-family: 'Alegreya Sans', sans-serif;
-  color:var(--color-grey);
+  color: var(--color-grey);
   font-size: 1rem;
 }
 
-/**** LIST MOVIES ****/ 
+/**** LIST MOVIES ****/
 
 .movies__container {
-    background-color: var(--color-white);
-    border-radius: 20px;
-    box-shadow: 0 2px 4px var(--color-box-shadow);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:2.5rem;
-    padding:2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem 8%;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px var(--color-box-shadow);
 }
 
-/**** CARD MOVIE ****/ 
+/**** CARD MOVIE ****/
 
 .movie__element {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
   background-color: var(--color-whitesmoke);
-  padding-bottom:2rem;
   box-shadow: 0 2px 4px var(--color-box-shadow);
-  width:25%;
 }
 
 .movie__img {
-  width:100%;
+  width: 100%;
 }
 
 .movie__title {
-  color:var(--color-black);
+  padding: 0.4rem 0;
+  color: var(--color-black);
   font-size: 1.2rem;
   font-weight: 400;
-  padding:0.4rem 0;
 }
 
 .movie__text {
   display: flex;
   flex-direction: row;
-  color : var(--color-grey);
-
+  color: var(--color-grey);
 }
 
 .movie__date {
-  border-right: 1px solid var(--color-grey);
   padding-right: 1rem;
+  border-right: 1px solid var(--color-grey);
 }
 
 .movie__duration {
   padding-left: 1rem;
+}
+
+@media (max-width: 1299px) {
+  .movies__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 699px) {
+  .movies__container {
+    grid-template-columns: 1fr;
+  }
 }

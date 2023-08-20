@@ -5,19 +5,19 @@ const app = {
 
     searchMovies() {
         const searchInput = document.querySelector('.search-bar__input');
-        const moviesElement = document.querySelectorAll('.movie__element');
-        const noResultsMessage = document.querySelector('.no-results-message');
+        const moviesElements = document.querySelectorAll('.movie__element');
+        let noResultsMessage = document.querySelector('.no-results-message');
 
         searchInput.addEventListener('input', () => {
             const searchText = searchInput.value.toLowerCase();
-            let resultFound = false; // To keep track of whether any results were found
+            let resultFound = false;
 
-            moviesElement.forEach(movieElement => {
+            moviesElements.forEach(movieElement => {
                 const movieTitle = movieElement.querySelector('.movie__title').textContent.toLowerCase();
                 const movieDate = movieElement.querySelector('.movie__date').textContent.toLowerCase();
 
                 if (movieTitle.includes(searchText) || movieDate.includes(searchText)) {
-                    movieElement.style.display = 'block';
+                    movieElement.style.display = 'flex';
                     resultFound = true;
                 } else {
                     movieElement.style.display = 'none';
@@ -25,9 +25,18 @@ const app = {
             });
 
             if (resultFound) {
-                noResultsMessage.style.display = 'none';
+                if (noResultsMessage) {
+                    noResultsMessage.classList.add('hidden');
+                    noResultsMessage = '';
+                }
             } else {
-                noResultsMessage.style.display = 'block';
+                if (!noResultsMessage) {
+                    noResultsMessage = document.createElement('p');
+                    noResultsMessage.textContent = 'No Result Found';
+                    noResultsMessage.classList.add('no-results-message');
+                    const movieContainer = document.querySelector('.movies__container');
+                    movieContainer.appendChild(noResultsMessage);
+                }
             }
         });
     }
