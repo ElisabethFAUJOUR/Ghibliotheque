@@ -1,74 +1,84 @@
 /* alegreya-sans-300 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/alegreya-sans-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* alegreya-sans-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/alegreya-sans-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* alegreya-sans-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/alegreya-sans-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/alegreya-sans-v24-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* alegreya-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/alegreya-sans-v24-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* alegreya-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/alegreya-sans-v24-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
-    --color-white:white;
-    --color-white-orange:#FCEEE7;
-    --color-light-orange:#eeab8a;
-    --color-black:black;
-    --color-whitesmoke:#f9f9f9;
-    --color-grey:#929191;
-    --color-pink:#915a71;
-    --color-box-shadow: rgba(0, 0, 0, 0.2);
-  }
+  --color-white: white;
+  --color-white-orange: #FCEEE7;
+  --color-light-orange: #eeab8a;
+  --color-black: black;
+  --color-whitesmoke: #f9f9f9;
+  --color-grey: #929191;
+  --color-pink: #915a71;
+  --color-box-shadow: rgba(0, 0, 0, 0.2);
+}
 
 body {
-    font-family: 'Alegreya Sans', sans-serif;
-    background-color: var(--color-whitesmoke);
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: var(--color-whitesmoke);
 }
 
 .header {
-    height: auto;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-white-orange);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-white-orange);
 }
 
 .header_link {
-    text-align: center;
+  text-align: center;
 }
 
 .header__img {
-    width:15%;
-    padding:1rem;
+  max-width: 400px;
+  width:80%;
+  padding: 1rem;
 }
 
 .footer {
-    height: auto;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-white-orange);
-    height:8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  background-color: var(--color-white-orange);
+
 }
 
 .footer_content {
-    text-align: center;
-    font-size: 0.9rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
