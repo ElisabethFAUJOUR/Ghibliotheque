@@ -44,6 +44,11 @@
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: var(--color-whitesmoke);
 }
 
@@ -67,23 +72,14 @@ body {
   padding: 1rem;
 }
 
-.main {
-  background-color: var(--color-whitesmoke);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer {
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   background-color: var(--color-white-orange);
-
 }
 
 .footer_content {

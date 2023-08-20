@@ -1,7 +1,8 @@
-.movies-list__container {
+.main {
   margin: 4rem auto;
   max-width: 1400px;
   width: 90%;
+  flex: 1;
 }
 
 /***** SEARCH BAR *****/
