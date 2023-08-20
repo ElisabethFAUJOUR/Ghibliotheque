@@ -10,9 +10,22 @@ const mainController = {
   },
 
   renderFilmPage(req, res) {
-    const id = parseInt(req.params.id);
-    const foundMovie = movies.find(movie => movie.id === id);
-    res.render("movie", { movie: foundMovie });
+    try {
+      const id = parseInt(req.params.id);
+      const foundMovie = movies.find(movie => movie.id === id);
+
+      if (isNaN(id)) {
+        throw new Error("Invalid ID");
+      }
+
+      if (!foundMovie) {
+        throw new Error("Movie not found");
+      }
+
+      res.render("movie", { movie: foundMovie });
+    } catch (error) {
+      res.status(404).render("error", { message: "Sorry, there is nothing here." });
+    }
   }
 };
 
