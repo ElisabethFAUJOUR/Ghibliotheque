@@ -2,43 +2,35 @@
 
     <main class="main">
         <div class="movies-list__container">
-            <form class="movies-list__form" action="/search" method="GET">
-                <div class="form__search-bar">
-                    <div class="search-bar__input" >
-                        <input type="text" placeholder="Recherche..." name="title" id="film">
-                    </div>
-                    <div class="search-bar__sort-button">
-                        <input type="checkbox" name="order" id="order" value="asc">
-                        <label for="order">Trier par ordre alphabétique</label>
-                        <button class="search-bar__button" type="submit"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-                <div class="form__reset">
-                    <button class="reset__button" type="submit">Clear</button>
-                </div>
+            <form class="form__search-bar">
+                <input class="search-bar__input" type="text" placeholder="Recherche...">
+                <i class="bi bi-search"></i>
             </form>
     
-            <div class="movies__container">
-                <% movies.forEach(movie=> { %>
+            <div class="movies__container">    
+                <% movies.forEach(movie => { %>
                     <article class="movie__element">
-                        <a href="/films/<%= movie.id %>">
+                        <a href="/movies/<%= movie.id %>">
                             <img class="movie__img" src="<%= movie.banner_src %>" alt="<%= movie.title %>">
                         </a>
-                        <a href="/films/<%= movie.id %>">
+                        <a href="/movies/<%= movie.id %>">
                             <h1 class="movie__title"><%= movie.title %></h1>
                         </a>   
                             <div class="movie__text">
                                 <p class="movie__date"><%= movie.release_date %></p>
                                 <p class="movie__duration"><%= movie.duration %> min</p>
                             </div>
-                      
                     </article >
-                    <% }) %>
+                <% }) %>
+                <p class="no-results-message">No results found</p>     
             </div>
         </div>
     </main>
     </div>
+
+    <%- include('partials/footer') %>
+    <script src="/js/app.js"></script>
+
     </body>
 
     </html>
-    <%- include('partials/footer') %>

@@ -1,7 +1,7 @@
 <%- include('partials/header') %>
 <main class="main">
   <div class="movie__card">
-    <a class ="button-back" href="/films">RETOUR A LA LISTE DE FILMS</a>
+    <a class ="button-back" href="/movies">RETOUR A LA LISTE DE FILMS</a>
     <div class="movie">
       <div class="movie__banner">
           <img src="<%= movie.image_src %>" alt="<%= movie.title %>">
@@ -32,7 +32,8 @@
   </div>
 </main>
 
+<%- include('partials/footer') %>
+
 </body>
 
 </html>
-<%- include('partials/footer') %>

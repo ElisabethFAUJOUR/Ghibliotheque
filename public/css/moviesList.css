@@ -1,57 +1,28 @@
 .movies-list__container {
   margin: 4rem auto;
-  max-width: 1500px;
+  max-width: 1400px;
   width:90%;
 }
 
 /***** SEARCH BAR *****/
 
-.movies-list__form {
+.form__search-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   width:100%;
-  color:var(--color-grey);
-}
-
-.form__search-bar, .form__reset {
-  display: flex;
-  align-items: center;
-  width:90%;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1rem;
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--color-box-shadow);
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  color:var(--color-grey);
 }
 
-.form__search-bar {
-  justify-content: space-between;
-}
-
-.search-bar__input input {
-  padding: 0.6rem;
-}
-
-.search-bar__input input::placeholder {
+.search-bar__input::placeholder {
   font-family: 'Alegreya Sans', sans-serif;
   color:var(--color-grey);
-  font-size: 1rem;
-}
-
-.search-bar__button {
-  padding-left: 1rem;
-}
-
-.form__reset {
-  justify-content: center;
-  padding: 0.6rem;
-  width:10%;
-}
-
-.reset__button {
-  color:var(--color-grey);
-  text-transform: uppercase;
   font-size: 1rem;
 }
 
