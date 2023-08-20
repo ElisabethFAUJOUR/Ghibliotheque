@@ -1,7 +1,7 @@
 # Ghibliotheque
 
 ## Description
-Welcome to the **Ghibliotheque**, a small library regouping all Ghibli movies ! 
+Welcome to the **Ghibliotheque**, a small library regrouping all Ghibli movies ! 
 
 ## Technos 
 - HTML/CSS
