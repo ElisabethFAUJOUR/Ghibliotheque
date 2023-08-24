@@ -8,14 +8,14 @@
   width: 100%;
   margin-bottom: 2rem;
   padding: 0.6rem 1rem;
-  background-color: var(--color-white);
+  background-color: var(--color-white-orange);
+  border: 1px solid var(--color-white-orange);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--color-box-shadow);
   color: var(--color-grey);
 }
 
 .search-bar__input::placeholder {
-  font-family: 'Alegreya Sans', sans-serif;
   color: var(--color-grey);
   font-size: 1rem;
 }
@@ -29,7 +29,7 @@
   align-items: center;
   gap: 2.5rem;
   padding: 2.5rem 8%;
-  background-color: var(--color-white);
+  background-color: var(--color-white-orange);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--color-box-shadow);
 }

@@ -20,7 +20,7 @@
 .error__button {
     margin-top: 1rem;
     padding: 0.8rem 2.5rem;
-    background-color: var(--color-white);
+    background-color: var(--color-whitesmoke);
     color: var(--color-grey);
     text-transform: uppercase;
     border-radius: 20px;

@@ -32,13 +32,11 @@
 }
 
 :root {
-  --color-white: white;
-  --color-white-orange: #FCEEE7;
+  --color-white-orange: #faede8;
   --color-light-orange: #eeab8a;
   --color-black: black;
   --color-whitesmoke: #f9f9f9;
   --color-grey: #929191;
-  --color-pink: #915a71;
   --color-box-shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -53,7 +51,10 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: var(--color-whitesmoke);
+  background-image: url(/images/bgflou.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
@@ -62,8 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: fit-content;
-  background-color: var(--color-white-orange);
+  height: 10rem;
 }
 
 .header_link {
@@ -90,7 +90,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 2rem 0;
-  background-color: var(--color-white-orange);
+  color: var(--color-whitesmoke);
   font-size: 0.9rem;
 }
 
