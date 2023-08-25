@@ -1,6 +1,3 @@
-// ---- Variables envrironnement ----
-require("dotenv").config();
-
 // ---- Imports ----
 const express = require("express");
 const app = express();
@@ -26,7 +23,7 @@ app.use(router);
 app.use(render404Page);
 
 // ---- Listen server ----
-const port = process.env.PORT;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);
 });
